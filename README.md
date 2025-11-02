@@ -8,7 +8,7 @@ Mục tiêu là **phát hiện các đoạn text giống hệt hoặc gần gi�
 - ⚡ **MinHash + LSH** – phát hiện *trùng gần đúng* dựa trên Jaccard similarity
 - 🧩 **SimHash + LSH Banding** – phát hiện trùng lặp nhanh trên *biểu diễn bit 128 chiều*
 
----
+
 
 ## 📂 Cấu trúc thư mục
 
@@ -30,7 +30,7 @@ demo1_deduplication_text/
 └── README.md # 📘 File hướng dẫn (bạn đang đọc nè ❤️)
 
 
----
+
 
 ## ⚙️ 1. Chuẩn bị môi trường
 
