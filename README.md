@@ -10,25 +10,25 @@ Mục tiêu là **phát hiện các đoạn text giống hệt hoặc gần gi�
 
 ---
 
-## 📁 Cấu trúc thư mục
+## 📂 Cấu trúc thư mục
 
-\`\`\`
+
 demo1_deduplication_text/
-├── minHash.py               # 🔹 Pipeline phát hiện trùng lặp bằng MinHash + LSH
-├── bloom_filter.py          # 🔹 Pipeline phát hiện trùng lặp bằng Bloom Filter
-├── embedding_faiss.py       # 🔹 Mã hóa văn bản và tìm tương đồng bằng FAISS
-├── simhash_lsh.py           # 🔹 Phát hiện trùng bằng SimHash + Locality-Sensitive Hashing
+├── minHash.py # 🔹 Pipeline phát hiện trùng lặp bằng MinHash + LSH
+├── bloom_filter.py # 🔹 Pipeline phát hiện trùng lặp bằng Bloom Filter
+├── embedding_faiss.py # 🔹 Mã hóa văn bản và tìm tương đồng bằng FAISS
+├── simhash_lsh.py # 🔹 Phát hiện trùng bằng SimHash + Locality-Sensitive Hashing
 │
-├── guardian_articles_ver2.json   # 📄 Dữ liệu gốc (các bài báo)
-├── embeddings_ver2.txt           # 📄 Vector embedding dạng text
-├── embeddings_ver2.json          # 📄 Vector embedding dạng JSON
+├── guardian_articles_ver2.json # 📄 Dữ liệu gốc (các bài báo)
+├── embeddings_ver2.txt # 📄 Vector embedding dạng text
+├── embeddings_ver2.json # 📄 Vector embedding dạng JSON
 │
-├── simHash_ver3.npy              # 💾 File hash SimHash 128-bit đã được lưu
-├── faiss_similar_pairs.npy       # 💾 Kết quả cặp tương tự theo FAISS
-├── minhash_similar_pairs.npy     # 💾 Kết quả cặp tương tự theo MinHash
+├── simHash_ver3.npy # 💾 File hash SimHash 128-bit đã được lưu
+├── faiss_similar_pairs.npy # 💾 Kết quả cặp tương tự theo FAISS
+├── minhash_similar_pairs.npy # 💾 Kết quả cặp tương tự theo MinHash
 │
-└── README.md                     # 📘 File hướng dẫn (bạn đang đọc nè ❤️)
-\`\`\`
+└── README.md # 📘 File hướng dẫn (bạn đang đọc nè ❤️)
+
 
 ---
 
