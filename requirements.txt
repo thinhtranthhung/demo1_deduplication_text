@@ -1,0 +1,6 @@
+numpy
+faiss-cpu
+tqdm
+sentence-transformers
+pybloom-live
+datasketch

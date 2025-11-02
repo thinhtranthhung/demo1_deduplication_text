@@ -5,7 +5,7 @@ with open('guardian_articles_ver2.json', 'r', encoding='utf-8') as f:
     data = json.load(f)
 
 # Chỉ số cần xem
-i, j = (1407, 1425)
+i, j = (712, 937)
 
 
 print(f"==== Document {i} ====")
