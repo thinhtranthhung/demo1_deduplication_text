@@ -14,7 +14,7 @@ class SimHash:
         self.hash_bits = hash_bits
         np.random.seed(seed)
         self.planes = np.random.randn(hash_bits, dim).astype(np.float32)
-        print(f"Khởi tạo SimHash {hash_bits}-bit (seed={seed})")
+        print(f"Khởi tạo SimHash {hash_bits}")
 
     def hash(self, vectors: np.ndarray):
         if vectors.ndim == 1:
@@ -59,7 +59,7 @@ start = time.time()
 doc_hashes = simhasher.hash(embeddings)
 print(f"Hoàn tất trong {time.time() - start:.2f}s")
 
-# ==================== BUCKETING ====================
+# BUCKETING
 print(f"Băm {n_docs} hash vào {BANDS} dải...")
 start = time.time()
 hash_tables = [defaultdict(list) for _ in range(BANDS)]
@@ -81,7 +81,7 @@ for table in hash_tables:
                 candidate_pairs.add(tuple(sorted(pair)))
 print(f"Tìm thấy {len(candidate_pairs)} cặp ứng cử viên trong {time.time() - start:.2f}s")
 
-# ==================== KIỂM TRA CUỐI ====================
+# KIỂM TRA CUỐI
 print(f"Kiểm tra {len(candidate_pairs)} cặp với ngưỡng {HAMMING_THRESHOLD}...")
 start = time.time()
 found_pairs = []

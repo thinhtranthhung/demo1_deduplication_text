@@ -11,7 +11,7 @@ CONTENT_KEY = 'content'
 NUM_PERM = 128
 JACCARD_THRESHOLD = 0.5
 BANDS = 32
-ROWS = NUM_PERM // BANDS
+BAND_WIDTH = NUM_PERM // BANDS
 K_SHINGLES = 5
 
 # ĐỌC DỮ LIỆU
@@ -35,7 +35,7 @@ def preprocess_and_shingle(text, k=5):
 print(f"Đang tạo MinHash (perm={NUM_PERM}) cho {n_docs} văn bản...")
 start = time.time()
 minhashes = []
-lsh = MinHashLSH(threshold=JACCARD_THRESHOLD, num_perm=NUM_PERM, params=(BANDS, ROWS))
+lsh = MinHashLSH(threshold=JACCARD_THRESHOLD, num_perm=NUM_PERM, params=(BANDS, BAND_WIDTH))
 
 for i, text in tqdm(enumerate(all_texts), total=n_docs, desc="Tạo MinHash"):
     shingles = preprocess_and_shingle(text, k=K_SHINGLES)
