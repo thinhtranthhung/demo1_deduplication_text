@@ -23,7 +23,7 @@ demo1_deduplication_text/
  ├── embeddings.txt # Vector embedding dạng text
  ├── embeddings.json # Vector embedding dạng JSON
  │
- ├── check_by_simHash.txt # Kết quả le cặp tương tự theo SimHash
+ ├── check_by_simHash.txt # Kết quả cặp tương tự theo SimHash
  ├── check_by_faiss.txt # Kết quả cặp tương tự theo FAISS
  ├── check_by_minHash.txt # Kết quả cặp tương tự theo MinHash
  │
