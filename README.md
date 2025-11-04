@@ -23,9 +23,9 @@ demo1_deduplication_text/
  ├── embeddings.txt # Vector embedding dạng text
  ├── embeddings.json # Vector embedding dạng JSON
  │
- ├── simHash.npy # File hash SimHash 128-bit đã được lưu
- ├── faiss_similar_pairs.npy # Kết quả cặp tương tự theo FAISS
- ├── minhash_similar_pairs.npy # Kết quả cặp tương tự theo MinHash
+ ├── check_by_simHash.txt # Kết quả le cặp tương tự theo SimHash
+ ├── check_by_faiss.txt # Kết quả cặp tương tự theo FAISS
+ ├── check_by_minHash.txt # Kết quả cặp tương tự theo MinHash
  │
  └── README.md # File hướng dẫn
 
@@ -54,8 +54,11 @@ Run: python bloom_filter.py
 
 
 Kết quả:
+Số văn bản ĐỘC NHẤT
 
-Danh sách ID văn bản trùng lặp
+số văn bản TRÙNG LẶP Y HỆT
+
+Danh sách ID văn bản trùng lặp bị lọc
 
 
 (2) Embedding + FAISS — phát hiện tương đồng theo vector
@@ -76,7 +79,7 @@ Kết quả:
 
 File embeddings.txt / embeddings.json: lưu vector hóa
 
-File faiss_similar_pairs.npy: chứa các cặp văn bản tương tự nhau
+File check_by_faiss: chứa các cặp văn bản tương tự nhau
 
 
 (3) MinHash + LSH — phát hiện trùng gần đúng (Jaccard)
@@ -97,9 +100,7 @@ Run: python minHash.py
 
 Kết quả:
 
-In ra các cặp (i, j) có Jaccard ≥ 0.6
-
-Lưu ra file minhash_similar_pairs.npy
+In ra các cặp (i, j) có Jaccard ≥ 0.5 trong file check_by_minHash.txt
 
 
 (4) Embedding + SimHash + LSH Banding — phát hiện nhanh trùng bit
@@ -119,6 +120,4 @@ Run: python embedding.py && python simHash.py
 
 Kết quả:
 
-File simHash.npy: lưu hash
-
-Danh sách cặp trùng lặp theo Hamming distance
+In ra các cặp (i, j) có Hamming ≤ 15 trong file check_by_simHash.txt

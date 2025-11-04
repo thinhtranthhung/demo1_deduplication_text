@@ -58,12 +58,12 @@ print(f"Hoàn tất lọc trong {end - start:.4f}s.")
 # HIỂN THỊ KẾT QUẢ
 print("KẾT QUẢ BLOOM FILTER")
 print(f"Tổng số văn bản đã xử lý: {len(unique_doc_ids) + len(duplicate_doc_ids)}")
-print(f" Số văn bản ĐỘC NHẤT: {len(unique_doc_ids)}")
-print(f" Số văn bản TRÙNG LẶP Y HỆT: {len(duplicate_doc_ids)}")
+print(f"Số văn bản ĐỘC NHẤT: {len(unique_doc_ids)}")
+print(f"Số văn bản TRÙNG LẶP Y HỆT: {len(duplicate_doc_ids)}")
 
 if duplicate_doc_ids:
     print("Một số văn bản bị lọc (ID) ")
     print(duplicate_doc_ids[:10])
 
-print("\n Hoàn tất Bloom Filter.")
+print("\nHoàn tất Bloom Filter.")
 

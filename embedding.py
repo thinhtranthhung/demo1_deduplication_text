@@ -47,6 +47,6 @@ print(f"Đang lưu dữ liệu ra {OUTPUT_JSON}...")
 with open(OUTPUT_JSON, 'w', encoding='utf-8') as jf:
     json.dump(all_embeddings, jf, ensure_ascii=False, indent=2)
 
-print(f"\n Hoàn tất mã hóa {len(all_texts)} văn bản.")
+print(f"\nHoàn tất mã hóa {len(all_texts)} văn bản.")
 print(f"File TXT: {OUTPUT_TXT}")
 print(f"File JSON: {OUTPUT_JSON}")

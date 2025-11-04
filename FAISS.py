@@ -27,7 +27,7 @@ n_docs, dim = embeddings.shape
 print(f"Đọc thành công {n_docs} vector, mỗi vector {dim} chiều.\n")
 
 # CHUẨN HÓA
-print("Chuẩn hóa vector về độ dài 1 (L2 normalization)...")
+print("Chuẩn hóa về vector đơn vị")
 faiss.normalize_L2(embeddings)
 
 # XÂY DỰNG INDEX
@@ -42,12 +42,12 @@ else:
     quantizer = faiss.IndexFlatIP(dim)
     index = faiss.IndexIVFFlat(quantizer, dim, nlist, faiss.METRIC_INNER_PRODUCT)
 
-    print(f"Đang train index trên {n_docs} vector...")
+    print(f"Đang train index trên {n_docs} vector")
     start_time = time.time()
     index.train(embeddings)
     print(f"Train xong sau {time.time() - start_time:.2f}s.")
 
-    print(f"Đang thêm {n_docs} vector vào index...")
+    print(f"Đang thêm {n_docs} vector vào index")
     start_time = time.time()
     index.add(embeddings)
     print(f"Thêm xong sau {time.time() - start_time:.2f}s. (ntotal={index.ntotal})\n")

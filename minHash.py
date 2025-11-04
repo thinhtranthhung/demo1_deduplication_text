@@ -61,7 +61,7 @@ for i in tqdm(range(n_docs), desc="Query LSH"):
 print(f"Tìm thấy {len(candidate_pairs)} cặp ứng cử viên.")
 
 # KIỂM TRA CHI TIẾT
-print(f"ang kiểm tra chi tiết {len(candidate_pairs)} cặp...")
+print(f"Đang kiểm tra chi tiết {len(candidate_pairs)} cặp...")
 final_pairs = []
 for (i, j) in tqdm(candidate_pairs, desc="Kiểm tra chi tiết"):
     jaccard = minhashes[i].jaccard(minhashes[j])
