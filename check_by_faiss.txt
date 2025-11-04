@@ -1,0 +1,17 @@
+Tổng số cặp tương tự ≥ 0.9: 15
+
+1. Cặp (67, 1377) - Similarity = 1.0000
+2. Cặp (395, 396) - Similarity = 1.0000
+3. Cặp (1407, 1425) - Similarity = 0.9587
+4. Cặp (1133, 1158) - Similarity = 0.9516
+5. Cặp (1610, 1614) - Similarity = 0.9405
+6. Cặp (543, 682) - Similarity = 0.9342
+7. Cặp (291, 321) - Similarity = 0.9337
+8. Cặp (1061, 1414) - Similarity = 0.9262
+9. Cặp (1071, 1138) - Similarity = 0.9162
+10. Cặp (851, 899) - Similarity = 0.9089
+11. Cặp (711, 1077) - Similarity = 0.9052
+12. Cặp (288, 1391) - Similarity = 0.9050
+13. Cặp (567, 756) - Similarity = 0.9020
+14. Cặp (734, 735) - Similarity = 0.9007
+15. Cặp (978, 1091) - Similarity = 0.9004

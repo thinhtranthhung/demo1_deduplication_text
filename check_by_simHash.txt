@@ -1,0 +1,21 @@
+Tổng số cặp Hamming ≤ 15: 19
+
+1. Cặp (67, 1377) - Hamming = 0
+2. Cặp (395, 396) - Hamming = 0
+3. Cặp (712, 937) - Hamming = 10
+4. Cặp (313, 712) - Hamming = 11
+5. Cặp (313, 937) - Hamming = 11
+6. Cặp (543, 682) - Hamming = 12
+7. Cặp (201, 414) - Hamming = 12
+8. Cặp (255, 937) - Hamming = 13
+9. Cặp (587, 599) - Hamming = 13
+10. Cặp (1610, 1614) - Hamming = 13
+11. Cặp (255, 712) - Hamming = 13
+12. Cặp (1061, 1414) - Hamming = 13
+13. Cặp (937, 1077) - Hamming = 14
+14. Cặp (700, 937) - Hamming = 14
+15. Cặp (1407, 1425) - Hamming = 14
+16. Cặp (562, 700) - Hamming = 15
+17. Cặp (331, 508) - Hamming = 15
+18. Cặp (420, 1776) - Hamming = 15
+19. Cặp (162, 459) - Hamming = 15
